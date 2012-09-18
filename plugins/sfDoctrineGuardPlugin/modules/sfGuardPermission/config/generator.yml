@@ -1,0 +1,34 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           sfGuardPermission
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          sf_guard_permission
+    with_doctrine_route:   true
+
+    config:
+      fields:
+        name: { label: "Nombre" }
+        description: { label: "Descripción" , help: Whether the user has activated the job, or not}
+        users_list: { label: "Lista de Usuario" }
+        groups_list: { label: "Lista de Grupos" }
+      
+      filter:
+       display: [name, description, users_list,groups_list ]
+        
+      list:
+        title: Lista Permisos
+        display: [=name, description]
+
+      edit:
+        title: Edición Permisos "%%name%%"
+
+      new:
+        title: Nuevo Permiso
+
+      form:
+        display: [name, description, groups_list, users_list]

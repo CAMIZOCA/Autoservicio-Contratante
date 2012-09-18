@@ -1,0 +1,1280 @@
+ALTAS_BAJAS_MVW:
+  connection: doctrine
+  tableName: ALTAS_BAJAS_MVW
+  columns:
+    id:
+      notnull: false
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: false
+    poliza:
+      notnull: false
+      type: string(135)
+      fixed: false
+      unsigned: false
+      primary: false
+    tipoidben:
+      notnull: false
+      type: string(3)
+      fixed: false
+      unsigned: false
+      primary: false
+    numidben:
+      notnull: false
+      type: integer(14)
+      fixed: false
+      unsigned: false
+      primary: false
+    dvidben:
+      notnull: false
+      type: string(3)
+      fixed: false
+      unsigned: false
+      primary: false
+    cedula:
+      notnull: false
+      type: string(132)
+      fixed: false
+      unsigned: false
+      primary: false
+    numcer:
+      notnull: false
+      type: integer(10)
+      fixed: false
+      unsigned: false
+      primary: false
+    nombre:
+      notnull: false
+      type: string(333)
+      fixed: false
+      unsigned: false
+      primary: false
+    tipoidtit:
+      notnull: false
+      type: string(3)
+      fixed: false
+      unsigned: false
+      primary: false
+    numidtit:
+      notnull: false
+      type: integer(14)
+      fixed: false
+      unsigned: false
+      primary: false
+    dvidtit:
+      notnull: false
+      type: string(3)
+      fixed: false
+      unsigned: false
+      primary: false
+    nombre_titular:
+      notnull: false
+      type: string(333)
+      fixed: false
+      unsigned: false
+      primary: false
+    fecnac:
+      notnull: false
+      type: timestamp(7)
+      fixed: false
+      unsigned: false
+      primary: false
+    fecha_movimiento:
+      notnull: false
+      type: timestamp(7)
+      fixed: false
+      unsigned: false
+      primary: false
+    sexben:
+      notnull: false
+      type: string(3)
+      fixed: false
+      unsigned: false
+      primary: false
+    codparent:
+      notnull: false
+      type: string(12)
+      fixed: false
+      unsigned: false
+      primary: false
+    despar:
+      notnull: false
+      type: string(4000)
+      fixed: false
+      unsigned: false
+      primary: false
+    codpla:
+      notnull: false
+      type: string(9)
+      fixed: false
+      unsigned: false
+      primary: false
+    edad:
+      notnull: false
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: false
+    pricap:
+      notnull: false
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: false
+    pricop:
+      notnull: false
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: false
+    cedreg:
+      notnull: false
+      type: integer(14)
+      fixed: false
+      unsigned: false
+      primary: false
+    contratante:
+      notnull: false
+      type: string(333)
+      fixed: false
+      unsigned: false
+      primary: false
+    movimiento:
+      notnull: false
+      type: string(3)
+      fixed: true
+      unsigned: false
+      primary: false
+    codctrocos:
+      notnull: false
+      type: string(18)
+      fixed: false
+      unsigned: false
+      primary: false
+    desctrocos:
+      notnull: false
+      type: string(150)
+      fixed: false
+      unsigned: false
+      primary: false
+    codramocert:
+      notnull: false
+      type: string(12)
+      fixed: false
+      unsigned: false
+      primary: false
+    idepol:
+      notnull: false
+      type: integer(14)
+      fixed: false
+      unsigned: false
+      primary: false
+    plazo_espera:
+      notnull: false
+      type: string(6)
+      fixed: false
+      unsigned: false
+      primary: false
+    sexo_parentesco:
+      notnull: false
+      type: string(3)
+      fixed: false
+      unsigned: false
+      primary: false
+    codparent_cross:
+      notnull: false
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: false
+    parentesco_cross:
+      notnull: false
+      type: string(75)
+      fixed: false
+      unsigned: false
+      primary: false
+CMB_ANNO_MVW:
+  connection: doctrine
+  tableName: CMB_ANNO_MVW
+  columns:
+    id:
+      notnull: false
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: false
+    anno:
+      notnull: false
+      type: string(4)
+      fixed: false
+      unsigned: false
+      primary: false
+    mes:
+      notnull: false
+      type: string(2)
+      fixed: false
+      unsigned: false
+      primary: false
+    mesnum:
+      notnull: false
+      type: string(40)
+      fixed: false
+      unsigned: false
+      primary: false
+    idepol:
+      notnull: true
+      type: integer(14)
+      fixed: false
+      unsigned: false
+      primary: false
+    centro_costo:
+      notnull: false
+      type: string(30)
+      fixed: false
+      unsigned: false
+      primary: false
+    stsaseg:
+      notnull: true
+      type: string(9)
+      fixed: false
+      unsigned: false
+      primary: false
+CMB_CLIENTE_MVW:
+  connection: doctrine
+  tableName: CMB_CLIENTE_MVW
+  columns:
+    id:
+      notnull: false
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: false
+    idepol:
+      notnull: true
+      type: integer(14)
+      fixed: false
+      unsigned: false
+      primary: false
+    id_ente_contratante:
+      notnull: true
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: false
+    descripcion:
+      notnull: false
+      type: string(331)
+      fixed: false
+      unsigned: false
+      primary: false
+    producto_acsel:
+      notnull: false
+      type: string(53)
+      fixed: false
+      unsigned: false
+      primary: false
+    fecinivig:
+      notnull: true
+      type: timestamp(7)
+      fixed: false
+      unsigned: false
+      primary: false
+    fecfinvig:
+      notnull: false
+      type: timestamp(7)
+      fixed: false
+      unsigned: false
+      primary: false
+CMB_CONTRATANTE_MVW:
+  connection: doctrine
+  tableName: CMB_CONTRATANTE_MVW
+  columns:
+    id:
+      notnull: false
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: false
+    idepol:
+      notnull: true
+      type: integer(14)
+      fixed: false
+      unsigned: false
+      primary: false
+    codctrocos:
+      notnull: true
+      type: string(18)
+      fixed: false
+      unsigned: false
+      primary: false
+    desctrocos:
+      notnull: false
+      type: string(150)
+      fixed: false
+      unsigned: false
+      primary: false
+    id_ente_contratante:
+      notnull: true
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: false
+COBERTURAS_MVW:
+  connection: doctrine
+  tableName: COBERTURAS_MVW
+  columns:
+    id:
+      notnull: false
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: false
+    ideaseg:
+      notnull: true
+      type: integer(14)
+      fixed: false
+      unsigned: false
+      primary: false
+    stsaseg:
+      notnull: true
+      type: string(9)
+      fixed: false
+      unsigned: false
+      primary: false
+    idepol:
+      notnull: true
+      type: integer(14)
+      fixed: false
+      unsigned: false
+      primary: false
+    stspol:
+      notnull: true
+      type: string(9)
+      fixed: false
+      unsigned: false
+      primary: false
+    fecinivigpol:
+      notnull: true
+      type: timestamp(7)
+      fixed: false
+      unsigned: false
+      primary: false
+    fecfinvigpol:
+      notnull: false
+      type: timestamp(7)
+      fixed: false
+      unsigned: false
+      primary: false
+    codplan:
+      notnull: true
+      type: string(9)
+      fixed: false
+      unsigned: false
+      primary: false
+    revplan:
+      notnull: true
+      type: string(9)
+      fixed: false
+      unsigned: false
+      primary: false
+    codramocert:
+      notnull: true
+      type: string(12)
+      fixed: false
+      unsigned: false
+      primary: false
+    descramo:
+      notnull: true
+      type: string(150)
+      fixed: false
+      unsigned: false
+      primary: false
+    stscertramo:
+      notnull: true
+      type: string(9)
+      fixed: false
+      unsigned: false
+      primary: false
+    feciniramo:
+      notnull: true
+      type: timestamp(7)
+      fixed: false
+      unsigned: false
+      primary: false
+    fecfinramo:
+      notnull: false
+      type: timestamp(7)
+      fixed: false
+      unsigned: false
+      primary: false
+    fecexcramo:
+      notnull: false
+      type: timestamp(7)
+      fixed: false
+      unsigned: false
+      primary: false
+    codcobert:
+      notnull: true
+      type: string(12)
+      fixed: false
+      unsigned: false
+      primary: false
+    desccobert:
+      notnull: true
+      type: string(150)
+      fixed: false
+      unsigned: false
+      primary: false
+    stscobert:
+      notnull: true
+      type: string(9)
+      fixed: false
+      unsigned: false
+      primary: false
+    fecinicobert:
+      notnull: true
+      type: timestamp(7)
+      fixed: false
+      unsigned: false
+      primary: false
+    fecfincobert:
+      notnull: true
+      type: timestamp(7)
+      fixed: false
+      unsigned: false
+      primary: false
+    fecexccobert:
+      notnull: false
+      type: timestamp(7)
+      fixed: false
+      unsigned: false
+      primary: false
+    sumaasegmoneda:
+      notnull: true
+      type: decimal(14)
+      fixed: false
+      unsigned: false
+      primary: false
+    deducible:
+      notnull: false
+      type: decimal(11)
+      fixed: false
+      unsigned: false
+      primary: false
+DISPONIBILIDAD_FONDO_MVW:
+  connection: doctrine
+  tableName: DISPONIBILIDAD_FONDO_MVW
+  columns:
+    id:
+      notnull: false
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: false
+    codigo_cliente:
+      notnull: true
+      type: string(42)
+      fixed: false
+      unsigned: false
+      primary: false
+    mes:
+      notnull: false
+      type: string(45)
+      fixed: false
+      unsigned: false
+      primary: false
+    mesparam:
+      notnull: false
+      type: string(2)
+      fixed: false
+      unsigned: false
+      primary: false
+    anoparam:
+      notnull: false
+      type: string(4)
+      fixed: false
+      unsigned: false
+      primary: false
+    idepol:
+      notnull: true
+      type: integer(14)
+      fixed: false
+      unsigned: false
+      primary: false
+    fecha_inicio_contrato:
+      notnull: true
+      type: timestamp(7)
+      fixed: false
+      unsigned: false
+      primary: false
+    fecha_fin_contrato:
+      notnull: false
+      type: timestamp(7)
+      fixed: false
+      unsigned: false
+      primary: false
+    saldo_anterior:
+      notnull: false
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: false
+    aportes:
+      notnull: false
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: false
+    cant_incurridos:
+      notnull: false
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: false
+    incurrido_total:
+      notnull: false
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: false
+    incurrido_acum:
+      notnull: false
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: false
+    costo_promedio:
+      notnull: false
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: false
+    incurrido_pend_ant:
+      notnull: false
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: false
+    incurrido_indemnizado:
+      notnull: false
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: false
+    disponible_fondo:
+      notnull: false
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: false
+    total_facturado:
+      notnull: false
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: false
+    total_amparado:
+      notnull: false
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: false
+    total_noamparado:
+      notnull: false
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: false
+    ahorro:
+      notnull: false
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: false
+    monto_rendido:
+      notnull: false
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: false
+    honorarios_hmo:
+      notnull: false
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: false
+    estimado_teorico:
+      notnull: false
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: false
+FONDO_MVW:
+  connection: doctrine
+  tableName: FONDO_MVW
+  columns:
+    id:
+      notnull: false
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: false
+    codigo_cliente:
+      notnull: true
+      type: string(42)
+      fixed: false
+      unsigned: false
+      primary: false
+    mes:
+      notnull: false
+      type: string(45)
+      fixed: false
+      unsigned: false
+      primary: false
+    mesparam:
+      notnull: false
+      type: string(2)
+      fixed: false
+      unsigned: false
+      primary: false
+    anoparam:
+      notnull: false
+      type: string(4)
+      fixed: false
+      unsigned: false
+      primary: false
+    idepol:
+      notnull: true
+      type: integer(14)
+      fixed: false
+      unsigned: false
+      primary: false
+    fecha_inicio_contrato:
+      notnull: true
+      type: timestamp(7)
+      fixed: false
+      unsigned: false
+      primary: false
+    fecha_fin_contrato:
+      notnull: false
+      type: timestamp(7)
+      fixed: false
+      unsigned: false
+      primary: false
+    saldo_anterior:
+      notnull: false
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: false
+    aportes:
+      notnull: false
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: false
+    cant_incurridos:
+      notnull: false
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: false
+    incurrido_total_teo:
+      notnull: false
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: false
+    incurrido_acum_teo:
+      notnull: false
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: false
+    costo_promedio_teo:
+      notnull: false
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: false
+    incurrido_total_act:
+      notnull: false
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: false
+    incurrido_acum_act:
+      notnull: false
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: false
+    costo_promedio_act:
+      notnull: false
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: false
+    incurrido_pend_ant:
+      notnull: false
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: false
+    incurrido_indemnizado:
+      notnull: false
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: false
+    disponible_fondo:
+      notnull: false
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: false
+    total_facturado:
+      notnull: false
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: false
+    total_amparado:
+      notnull: false
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: false
+    total_noamparado:
+      notnull: false
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: false
+    total_pagado:
+      notnull: false
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: false
+    total_pagado_acum:
+      notnull: false
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: false
+    ahorro:
+      notnull: false
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: false
+    monto_rendido:
+      notnull: false
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: false
+    honorarios_hmo:
+      notnull: false
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: false
+    numero_poliza:
+      notnull: false
+      type: string(53)
+      fixed: false
+      unsigned: false
+      primary: false
+POBLACION_MVW:
+  connection: doctrine
+  tableName: POBLACION_MVW
+  columns:
+    id:
+      notnull: false
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: false
+    certificado:
+      notnull: true
+      type: integer(10)
+      fixed: false
+      unsigned: false
+      primary: false
+    tipoid:
+      notnull: true
+      type: string(3)
+      fixed: false
+      unsigned: false
+      primary: false
+    numid:
+      notnull: true
+      type: integer(14)
+      fixed: false
+      unsigned: false
+      primary: false
+    dvid:
+      notnull: true
+      type: string(3)
+      fixed: false
+      unsigned: false
+      primary: false
+    cedula:
+      notnull: false
+      type: string(126)
+      fixed: false
+      unsigned: false
+      primary: false
+    ideaseg:
+      notnull: true
+      type: integer(14)
+      fixed: false
+      unsigned: false
+      primary: false
+    nombre:
+      notnull: false
+      type: string(333)
+      fixed: false
+      unsigned: false
+      primary: false
+    codparent:
+      notnull: true
+      type: string(12)
+      fixed: false
+      unsigned: false
+      primary: false
+    parentesco:
+      notnull: false
+      type: string(4000)
+      fixed: false
+      unsigned: false
+      primary: false
+    parentesco_general:
+      notnull: false
+      type: string(33)
+      fixed: false
+      unsigned: false
+      primary: false
+    parentesco_cross:
+      notnull: false
+      type: string(75)
+      fixed: false
+      unsigned: false
+      primary: false
+    sexo_parentesco:
+      notnull: false
+      type: string(3)
+      fixed: false
+      unsigned: false
+      primary: false
+    sexo:
+      notnull: false
+      type: string(3)
+      fixed: false
+      unsigned: false
+      primary: false
+    edad:
+      notnull: false
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: false
+    fecnac:
+      notnull: false
+      type: timestamp(7)
+      fixed: false
+      unsigned: false
+      primary: false
+    cliente:
+      notnull: true
+      type: string(180)
+      fixed: false
+      unsigned: false
+      primary: false
+    centro_costo:
+      notnull: false
+      type: string(30)
+      fixed: false
+      unsigned: false
+      primary: false
+    desctrocos:
+      notnull: false
+      type: string(150)
+      fixed: false
+      unsigned: false
+      primary: false
+    codplan:
+      notnull: true
+      type: string(9)
+      fixed: false
+      unsigned: false
+      primary: false
+    codramo:
+      notnull: true
+      type: string(12)
+      fixed: false
+      unsigned: false
+      primary: false
+    ramo:
+      notnull: true
+      type: string(150)
+      fixed: false
+      unsigned: false
+      primary: false
+    fecing:
+      notnull: false
+      type: timestamp(7)
+      fixed: false
+      unsigned: false
+      primary: false
+    fecexc:
+      notnull: false
+      type: timestamp(7)
+      fixed: false
+      unsigned: false
+      primary: false
+    stsaseg:
+      notnull: true
+      type: string(9)
+      fixed: false
+      unsigned: false
+      primary: false
+    codprod:
+      notnull: true
+      type: string(12)
+      fixed: false
+      unsigned: false
+      primary: false
+    numpol:
+      notnull: true
+      type: integer(10)
+      fixed: false
+      unsigned: false
+      primary: false
+    idepol:
+      notnull: true
+      type: integer(14)
+      fixed: false
+      unsigned: false
+      primary: false
+    codparent_cross:
+      notnull: true
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: false
+    plazo_espera:
+      notnull: false
+      type: string(6)
+      fixed: false
+      unsigned: false
+      primary: false
+R_CLIENTE_USUARIO:
+  connection: doctrine
+  tableName: R_CLIENTE_USUARIO
+  columns:
+    id:
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: true
+    idepol:
+      notnull: false
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: false
+    iduser:
+      notnull: false
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: false
+    idperm:
+      notnull: false
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: false
+  relations:
+    SF_GUARD_PERMISSION:
+      local: idperm
+      foreign: id
+      type: one
+SINIESTRALIDAD_MVW:
+  connection: doctrine
+  tableName: SINIESTRALIDAD_MVW
+  columns:
+    id:
+      notnull: false
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: false
+    poliza:
+      notnull: false
+      type: string(135)
+      fixed: false
+      unsigned: false
+      primary: false
+    idepol:
+      notnull: false
+      type: integer(14)
+      fixed: false
+      unsigned: false
+      primary: false
+    stsliquid:
+      notnull: false
+      type: string(9)
+      fixed: false
+      unsigned: false
+      primary: false
+    numid:
+      notnull: false
+      type: integer(14)
+      fixed: false
+      unsigned: false
+      primary: false
+    contratante:
+      notnull: false
+      type: string(333)
+      fixed: false
+      unsigned: false
+      primary: false
+    cod_tipo_des:
+      notnull: false
+      type: string(6)
+      fixed: false
+      unsigned: false
+      primary: false
+    tipo_des:
+      notnull: false
+      type: string(4000)
+      fixed: false
+      unsigned: false
+      primary: false
+    tipo_emer:
+      notnull: false
+      type: string(45)
+      fixed: false
+      unsigned: false
+      primary: false
+    clave:
+      notnull: false
+      type: string(240)
+      fixed: false
+      unsigned: false
+      primary: false
+    sts_clave:
+      notnull: false
+      type: string(9)
+      fixed: false
+      unsigned: false
+      primary: false
+    ci_titular:
+      notnull: false
+      type: string(126)
+      fixed: false
+      unsigned: false
+      primary: false
+    titular:
+      notnull: false
+      type: string(333)
+      fixed: false
+      unsigned: false
+      primary: false
+    ci_paciente:
+      notnull: false
+      type: string(129)
+      fixed: false
+      unsigned: false
+      primary: false
+    paciente:
+      notnull: false
+      type: string(333)
+      fixed: false
+      unsigned: false
+      primary: false
+    facturado:
+      notnull: false
+      type: decimal(14)
+      fixed: false
+      unsigned: false
+      primary: false
+    amparado:
+      notnull: false
+      type: decimal(14)
+      fixed: false
+      unsigned: false
+      primary: false
+    indemnizado:
+      notnull: false
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: false
+    fecnotif:
+      notnull: false
+      type: timestamp(7)
+      fixed: false
+      unsigned: false
+      primary: false
+    fecocurr:
+      notnull: false
+      type: timestamp(7)
+      fixed: false
+      unsigned: false
+      primary: false
+    cod_ben_pago:
+      notnull: false
+      type: string(120)
+      fixed: false
+      unsigned: false
+      primary: false
+    ben_pago:
+      notnull: false
+      type: string(333)
+      fixed: false
+      unsigned: false
+      primary: false
+    codproveedor:
+      notnull: false
+      type: string(42)
+      fixed: false
+      unsigned: false
+      primary: false
+    rif:
+      notnull: false
+      type: string(129)
+      fixed: false
+      unsigned: false
+      primary: false
+    tipoprov:
+      notnull: false
+      type: string(4000)
+      fixed: false
+      unsigned: false
+      primary: false
+    parentesco:
+      notnull: false
+      type: string(4000)
+      fixed: false
+      unsigned: false
+      primary: false
+    enfermedad:
+      notnull: false
+      type: string(750)
+      fixed: false
+      unsigned: false
+      primary: false
+    tratamiento:
+      notnull: false
+      type: string(750)
+      fixed: false
+      unsigned: false
+      primary: false
+    cober_sin:
+      notnull: false
+      type: string(18)
+      fixed: false
+      unsigned: false
+      primary: false
+    numoblig:
+      notnull: false
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: false
+    idesin:
+      notnull: false
+      type: integer(14)
+      fixed: false
+      unsigned: false
+      primary: false
+    numaprob:
+      notnull: false
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: false
+    stsoblig:
+      notnull: false
+      type: string(9)
+      fixed: false
+      unsigned: false
+      primary: false
+    codexterno:
+      notnull: false
+      type: string(30)
+      fixed: false
+      unsigned: false
+      primary: false
+    fecha_pago:
+      notnull: false
+      type: timestamp(7)
+      fixed: false
+      unsigned: false
+      primary: false
+    idepreadmin:
+      notnull: false
+      type: integer(14)
+      fixed: false
+      unsigned: false
+      primary: false
+    numliquid:
+      notnull: false
+      type: integer(2)
+      fixed: false
+      unsigned: false
+      primary: false
+    codramocert:
+      notnull: false
+      type: string(12)
+      fixed: false
+      unsigned: false
+      primary: false
+    tipoidpac:
+      notnull: false
+      type: string(3)
+      fixed: false
+      unsigned: false
+      primary: false
+    numidpac:
+      notnull: false
+      type: integer(14)
+      fixed: false
+      unsigned: false
+      primary: false
+    dvidpac:
+      notnull: false
+      type: string(3)
+      fixed: false
+      unsigned: false
+      primary: false
+    estado:
+      notnull: false
+      type: string(150)
+      fixed: false
+      unsigned: false
+      primary: false
+    ciudad:
+      notnull: false
+      type: string(150)
+      fixed: false
+      unsigned: false
+      primary: false
+    codparent_cross:
+      notnull: false
+      type: integer(8)
+      fixed: false
+      unsigned: false
+      primary: false
+    parentesco_cross:
+      notnull: false
+      type: string(75)
+      fixed: false
+      unsigned: false
+      primary: false

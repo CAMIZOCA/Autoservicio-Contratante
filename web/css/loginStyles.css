@@ -1,0 +1,297 @@
+﻿/* APRENDIZAJE VIRTUAL */
+
+body, html {
+    width:100%;
+    height:100%;
+    margin:auto;
+    padding:0;
+    background-color:#0A7757; /* fondo */
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:12px;
+}
+
+/* Estilos Genericos */
+
+input[type=text],
+input[type=password],
+input[type=button],
+input[type=submit],
+input[type=textarea] {
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:12px;
+}
+
+input[type=text],
+input[type=password],
+input[type=textarea] {
+    padding:2px;
+    color:#333333;
+    background-color:#FFFFFF;
+    border:1px #008265 solid;
+}
+
+input[type=button],
+input[type=submit] {
+    padding:2px 5px 2px 5px;
+    font-weight:bold;
+    color:#FFFFFF;
+    background-color:#008265;
+    border:2px #008265 solid;
+    cursor:pointer;
+}
+
+input[type=button]:hover,
+input[type=submit]:hover {
+    background-color:#075e4b;
+    border-color:#075E4B;
+}
+
+.help {
+    width:16px;
+    height:16px;
+    line-height:16px;
+    padding-left:5px;
+}
+
+.help img {
+    border:0px transparent solid;
+}
+
+/* LOGIN */
+
+.mainContainer {
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    position:fixed;
+    display:table;
+
+}
+
+.mainContainer .contentBox {
+    display:table-cell;
+    vertical-align:middle;
+    margin-top: 5%;
+
+}
+
+.mainContainer .contentBox .loginForm {
+    width:70%;
+    height:80px;
+    background-color:#FFFFFF;
+    margin:auto;
+    border:10px #04493A solid;
+    min-width:500px;
+    min-height:263px;
+    background-image:url('../images/fondoLOG.jpg');
+    background-repeat: no-repeat;
+}
+
+.mainContainer .contentBox .loginForm h1 {
+    margin:0 auto 0 auto;
+    padding:0;
+    display:block;
+    /*	height:75px;*/
+    /*	background-image:url('../images/login_loginFormTitleBackground.jpg');*/
+    background-position:center bottom;
+    background-repeat:no-repeat;
+    text-align:center;
+}
+
+.mainContainer .contentBox .loginForm h1 img {
+    display:block;
+    margin:auto;
+    padding-top:15px;
+    height: 50px;
+}
+
+/* Login Form */
+
+.loginForm form table.loginBox {
+    width:350px;
+    margin:20px auto 0 auto;
+}
+
+.loginForm form table.loginBox th {
+    width:120px;
+    text-align:right;
+}
+
+.loginForm form table.loginBox th label {
+    font-size:12px;
+    padding-right:10px;
+    color:#333333;
+}
+
+.loginForm .submitLogin {
+    margin-left:126px;
+}
+
+/* Mensajes */
+.messageBox {
+    font-size:12px;
+    font-family:Arial, Helvetica, sans-serif;
+    color:#000000;
+    border-width:2px;
+    border-style:solid;
+    width:90%;
+    margin:auto;
+    min-height:20px;
+        padding:20px;
+    background-color: #DAE5EE;
+    background-position:left top;
+    background-repeat:no-repeat;
+    margin-bottom: 10px;
+}
+
+
+ a.startTest {
+    display:block;
+    height:20px;
+    line-height:20px;
+    padding:4px;
+    background-color:#00538d;
+    color:#FFFFFF;
+    width:200px;
+    text-align:center;
+    text-decoration:none;
+    margin:10px auto 10px auto;
+    background-image:url('/images/genericButton.jpg');
+    background-repeat:repeat-x;
+    background-position:left bottom;
+    font-weight:bold;		
+}	
+
+.messageBox h2 {
+    font-size:18px;
+    font-weight:bold;
+    padding:0px 0px 15px 125px;
+    margin:0;
+}
+
+.messageBox p {
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:12px;
+    padding:0px 0px 30px 150px;
+}
+
+.errorMessage {
+    color:#fa1919;
+    width:70%;
+    padding:10px 0 0 0;
+    margin:0 auto 0 auto;
+
+}
+
+.errorMessage a {
+    color:#d91919;
+    text-decoration:underline;
+}
+#contentBar .alertMessage {
+    border-color:#FFCC00;
+    background-color:#FFFF99;
+    background-image:url('/images/messageBox_alert.png');		
+}
+.alertMessage {
+    color:#00538d; /* borde color */
+    width:50%;
+    padding:10px 0 0 0;
+    margin:0 auto 0 auto;
+border-color:#FFCC00;
+    background-color:#FFFF99;
+    background-image:url('/images/messageBox_alert.png');		
+}
+
+.alertMessage a {
+    color:#0097FB;
+    text-decoration:underline;
+}
+
+.successMessage {
+    color:#008265;
+    width:70%;
+    padding:10px 0 0 0;
+    margin:0 auto 0 auto;
+}
+
+.successMessage a {
+    color:#00C498;
+    text-decoration:underline;
+}
+
+
+/* ACTIVACION USUARIO */
+
+.mainContainerActivation {
+    position:relative;
+}
+
+.mainContainer .contentBox .activationForm {
+    width:70%;
+    background-color:#FFFFFF;
+    margin:auto;
+    border:110px #0d4064 solid;
+    min-width:500px;
+    min-height:300px;
+    padding-bottom:30px;
+}
+
+.mainContainer .contentBox .activationForm h1 {
+    margin:0 auto 0 auto;
+    padding:0;
+    display:block;
+    height:75px;
+    background-image:url('../images/login_loginFormTitleBackground.jpg');
+    background-position:center bottom;
+    background-repeat:no-repeat;
+    text-align:center;
+}
+
+.mainContainer .contentBox .activationForm h1 img {
+    display:block;
+    margin:auto;
+    padding-top:15px;
+}
+
+
+.activationForm table.userActivationBox {
+    width:60%;
+    max-width:800px;
+    min-width:450px;
+    margin:30px auto 0 auto;
+    padding:0 0 20px 0;
+    border:1px #008265 solid;
+    background-color:#FFF;
+    display:block;
+}
+
+.activationForm table.userActivationBox caption {
+    padding:5px;
+    margin:0 0 20px 0;
+    background-color:#008265;
+    display:block;
+    font-weight:bold;
+    color:#FFFFFF;
+    text-align:left;
+    font-size:14px;
+}
+
+.activationForm table.userActivationBox th label {
+    width:150px;
+    text-align:right;
+    display:block;
+    padding-right:10px;
+}
+
+.activationForm table.userActivationBox td {
+}
+
+.activationForm .submitActivation {
+    text-align:center;
+    padding:20px;
+}
+
+.activationForm .submitActivation input[type=submit] {
+    width:100px;
+}
